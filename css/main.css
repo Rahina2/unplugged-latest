@@ -96,6 +96,71 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* General Styles */
+ 
+html {
+       font-size: 16px;
+     }
+ 
+body {
+       font-family: 'Open Sans', sans-serif;
+       font-size: 1em;
+        color: #e2e3ed;
+       text-align: left;
+}
+ 
+ul, 
+ol {
+    list-style: none;
+}
+ 
+a {
+     color: #e2e3ed;
+     text-decoration: none;
+}
+
+h1 {
+     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+     font-size: 3.75em;
+}
+ 
+
+
+ 
+h2 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.975em;
+}
+ 
+h3, 
+h4 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.875em;
+}
+ 
+p {
+      font-size: 1.125em;
+    }
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+     font-style: normal;
+}
+ 
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+}
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 .content-wrapper{
@@ -104,6 +169,9 @@ textarea {
 
 .header-divider{
     width: 100% ;
+     background: #3a3a3a; 
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -111,6 +179,7 @@ header nav {
 }
 header nav ul{
     width: 45% ;
+    text-transform: uppercase;
 }
 footer content-wrapper{
     width: 55% ;
@@ -127,6 +196,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+     background-color: #202322;
 }
 header{
     padding: 20px 0;
@@ -138,17 +208,27 @@ header .content-wrapper{
      flex-flow: row wrap;
      margin: 0;
 }
+
+header .content-wrapper a{
+  font-size: 1.125em;
+}
+
 header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    font-size: 1.125em;
+  font-weight: 700;
 }
 header nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
+header nav ul li{
+    margin-left: 30px;
+}
 
 footer .social-icons{
     display: flex;
@@ -163,11 +243,12 @@ footer .social-icons{
   align-items: center;
   flex-direction: column;
   padding: 50px 0;
+    text-align: center;
 }
 footer .social-icons p {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center ;
 }
 
 footer .social{
@@ -199,6 +280,7 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #527158;
 }
 .features{
     display: flex;
@@ -220,6 +302,7 @@ aside{
 }
 .features p{
     margin: 0;
+     text-align: center;
 }
 
 .reviews h2{
@@ -279,13 +362,15 @@ footer .copyright{
     justify-content: center;
     align-items: center;
      flex-flow: row wrap;
-     width: 90%;**/
+     width: 100%;
+      background-color: #527158;
 }
 .faq .content-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-     flex-flow: row wrap;**/
+     flex-flow: row wrap;
+      width: ;
 }
 h1{
     padding: 50px 0;
@@ -374,6 +459,35 @@ h1{
     clear: both;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  background-color: #9d9ea4;
+  font-size: 1.125em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -387,7 +501,7 @@ h1{
 
 header{
     display: flex;
-}
+   }
 
   header .content-wrapper{
         width: 90%;
@@ -401,9 +515,8 @@ header{
     }
  
     header nav ul {
-        width: 25%;  
-
-    }
+        width: 25%;
+     }
 
     .header-divider {
         display: none;
@@ -447,11 +560,11 @@ header{
     .reviews article {
       display: flex;
       justify-content: space-between;
-      width: 49%;
+     /** width: 49%;**/
     }
 
     .reviews article div {
-        width:         
+        width: 49%;    
     }
  
     /* Footer */
@@ -468,6 +581,10 @@ header{
             align-items: center;
     }
  
+ .footer-content address h4{
+      margin-left: 70px;
+ }
+
     footer .contact {
         margin-bottom: 0;
     }
