@@ -146,11 +146,11 @@ p {
       font-size: 1.125em;
     }
 img {
- 
+    width: 100%;
 }
  
 figure {
- 
+     margin: 0;
 }
  
 address {
@@ -272,6 +272,8 @@ footer p{
     margin: 0;
 }
 .hero-area{
+   background: url('../img/jake-melara-unsplash.jpg') center no-repeat #333;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,6 +288,8 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
+     background: url('../img/rawpixel-unsplash1.jpg') center no-repeat #333;
+    background-size: cover;
 }
 
 .features .features-items{
@@ -324,6 +328,7 @@ footer .copyright{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #2a423a;
 }
 
 
