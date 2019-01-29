@@ -122,28 +122,22 @@ a {
      text-decoration: none;
 }
 
-h1 {
-     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-     font-size: 3.75em;
+h1{
+  margin: 0;
 }
- 
-
-
- 
 h2 {
      font-family: 'Poppins', sans-serif;
-     font-size: 1.975em;
+     font-size: 1.875em;
 }
  
 h3, 
 h4 {
      font-family: 'Poppins', sans-serif;
-     font-size: 1.875em;
+     font-size: 1.125em;
 }
  
 p {
-      font-size: 1.125em;
+      font-size: 1.285em;
     }
 img {
     width: 100%;
@@ -188,7 +182,7 @@ footer content-wrapper{
     width: 55%;
 }
 .reviews h3{
-    width: 80%;
+    width: 50%;
 }
 header,
 footer {
@@ -288,7 +282,7 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
-     background: url('../img/rawpixel-unsplash1.jpg') center no-repeat #333;
+     background: url('../img/rawpixel-unsplash.jpg') center no-repeat #333;
     background-size: cover;
 }
 
@@ -304,9 +298,16 @@ aside{
        padding: 50px 0;
        width: 55%;
 }
+ .features i {
+       font-size: 3.75em;
+        margin-bottom: 40px;
+}
 .features p{
-    margin: 0;
      text-align: center;
+}
+
+.features .fontawesome-icon{
+    margin: 0 50px;
 }
 
 .reviews h2{
@@ -316,7 +317,10 @@ aside{
 }
 
 .reviews h3{
-    padding: 30px 0;
+    padding:  0;
+    margin: 0;
+    width: 75%;
+    line-height: 1.5;
 }
 
 footer .copyright{
@@ -542,6 +546,10 @@ header{
         display: none;
     }
  
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
     /* Hero Area */
  
     /* Aside */
@@ -564,7 +572,7 @@ header{
  
     .features article {
          flex-basis: 40%;
-         display: flex;
+         display: block;
          justify-content:center;
          align-items: center;
          flex-flow: row-wrap;
@@ -573,9 +581,12 @@ header{
     }
  
     .features .features-item-description {
-        width: 100%; 
+        width: 50%; 
     }
  
+ Lacrue-bottling {
+  width: 100%;
+ }
     /* Reviews */
     .reviews article {
       display: flex;
@@ -587,6 +598,9 @@ header{
         width: 49%;    
     }
  
+  .map iframe {
+    padding-bottom: 27%
+  }
     /* Footer */
     footer .content-wrapper {
         width: 60%; 
@@ -643,6 +657,10 @@ header{
         align-items:center;
 }
 
+.features .fontawesome-icon{
+  margin:0;
+}
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -656,6 +674,24 @@ header{
  
     .faq h2 {
         width: 100%;
+    }
+h1{
+   font-weight: bold;
+     font-size: 2.75em;
+}
+
+h2 {
+  
+     font-size: 1.975em;
+}
+ 
+h3, 
+h4 {
+     font-size: 1.5em;
+}
+ 
+p {
+      font-size: 0.875em;
     }
 }
  
@@ -685,10 +721,29 @@ header{
         width:89%; 
     }
  
+ h1 {
+    font-weight: bold;
+     font-size: 3.75em;
+}
+ 
+
+
+ 
+h2 {
+     font-size: 1.975em;
+}
+ 
+h3, 
+h4 {
+     font-size: 1.875em;
+}
+ 
+p {
+      font-size: 1.125em;
+    }
     .features article {
         flex-basis: 30%;
     }
- 
     /* Reviews */ 
     .reviews article div {
         width: 45%;
@@ -705,7 +760,9 @@ header{
     .contact-section .content-wrapper h2 {
         margin-bottom: 44px; 
     }
- 
+  .map iframe {
+    padding-bottom: 25%
+  }
  
 /* ==========================================================================
    FAQ Page
